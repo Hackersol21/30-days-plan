@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #0b0a1f;
+  color: #ede9fe;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: #1e1b4b;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background: #312e81;
+}
+
+.tab {
+  padding: 12px 20px;
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: #7c3aed;
+}
+
+.content {
+  display: none;
+  padding: 20px;
+}
+
+.content.active {
+  display: block;
+}
+
+.task {
+  background: #1e1b4b;
+  margin: 10px 0;
+  padding: 12px;
+  border-left: 5px solid #7c3aed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.task.done {
+  opacity: 0.6;
+  text-decoration: line-through;
+}
+
+button {
+  background: #7c3aed;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.form input {
+  padding: 6px;
+  margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+}
+
+
+.timetable-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.timetable-box img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(124, 58, 237, 0.6);
+}
+
+.form input, .form select {
+  padding: 8px;
+  margin: 5px;
+  border-radius: 6px;
+  border: none;
+}
+
+.task p {
+  margin: 5px 0;
+  color: #e9d5ff;
+}
+
+

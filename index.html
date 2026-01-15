@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>30 Days Plan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>30 Days Plan 🚀</h1>
+        <p>Discipline today creates success tomorrow</p>
+    </header>
+
+    <nav>
+        <button class="tab active" onclick="openTab('weekday')">Weekdays</button>
+        <button class="tab" onclick="openTab('weekend')">Saturday / Sunday</button>
+        <button class="tab" onclick="openTab('timetable')">Daily Timetable</button>
+        <button class="tab" onclick="openTab('progress')">Progress</button>
+    </nav>
+
+
+    <section id="weekday" class="content active">
+        <h2>📅 Weekday Timetable</h2>
+        <div id="taskList"></div>
+
+        <div class="form">
+            <input type="date" id="date">
+
+            <select id="time">
+                <option value="">Select Time</option>
+                <option>8:00 – 9:00 AM</option>
+                <option>9:00 – 9:30 AM</option>
+                <option>9:30 – 11:30 AM</option>
+                <option>11:30 – 1:30 PM</option>
+                <option>1:30 – 2:00 PM</option>
+                <option>2:30 – 4:00 PM</option>
+                <option>4:00 – 4:15 PM</option>
+                <option>4:15 – 6:15 PM</option>
+                <option>6:15 – 7:00 PM</option>
+                <option>7:00 – 9:00 PM</option>
+                <option>9:00 – 9:15 PM</option>
+                <option>9:15 – 11:00 PM</option>
+            </select>
+
+            <input type="text" id="task" placeholder="Enter task (e.g. Django CRUD)">
+            <button onclick="addTask()">Add Task ➕</button>
+        </div>
+
+    </section>
+
+    <section id="weekend" class="content">
+        <h2>🌴 Weekend Plan (No Classes)</h2>
+        <ul>
+            <li>✔ Project Work</li>
+            <li>✔ Revision</li>
+            <li>✔ Practice Django & JS</li>
+            <li>✔ Resume / GitHub Update</li>
+        </ul>
+    </section>
+
+    <section id="progress" class="content">
+        <h2>📊 Progress</h2>
+        <p id="progressText">0 tasks completed</p>
+    </section>
+
+    <section id="timetable" class="content">
+        <h2>🕝 Daily Study Time Table</h2>
+
+        <div class="timetable-box">
+            <img src="images/timetable.jpg" alt="Daily Study Timetable">
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
